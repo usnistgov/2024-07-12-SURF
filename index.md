@@ -363,10 +363,7 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in
-<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>.
-Please check <a href="{{ site.incubator_lesson_site }}">the lesson homepage</a>
-for a list of lesson sections and estimated timings.
+{% include incubator/schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -406,6 +403,8 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
+  {% elsif site.carpentry == "incubator" %}
+  Carpentries Incubator
   {% endif %}
   workshop,
   you will need access to software as described below.
@@ -419,16 +418,6 @@ reference for instructors that may be useful on the
   Configuration Problems and Solutions wiki page</a>.
 </p>
 
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
-{% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
@@ -445,5 +434,7 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-{% include incubator/setup.html %}
+Please check the "Setup" page of
+<a href="{{ site.incubator_lesson_site }}">the lesson site</a> for instructions
+to follow to obtain the software and data you will need to follow the lesson.
 {% endif %}
