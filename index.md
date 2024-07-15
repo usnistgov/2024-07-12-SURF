@@ -438,6 +438,6 @@ during the workshop.
 Please check the "Setup" page of
 <a href="{{ site.incubator_lesson_site }}">the lesson site</a> for instructions
 to follow to obtain the software and data you will need to follow the lesson.
-</p>
+
 {% include incubator/setup.html %}
 {% endif %}
