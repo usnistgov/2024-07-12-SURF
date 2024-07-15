@@ -61,10 +61,10 @@ title: "HPC Intro for SURF Students"
 incubator_lesson_site: "https://hpc-workshops.github.io/ctcms-hpc-intro/"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
-incubator_pre_survey: "FIXME"
+incubator_pre_survey: "https://carpentries.typeform.com/to/wi32rS?slug=2024-07-12-SURF"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your post-workshop survey
-incubator_post_survey: "FIXME"
+incubator_post_survey: "https://carpentries.typeform.com/to/UgVdRQ?slug=2024-07-12-SURF"
 #
 #------------------------------------------------------------
 
